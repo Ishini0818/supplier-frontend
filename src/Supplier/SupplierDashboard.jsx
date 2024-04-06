@@ -1,26 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import TabComponent from '../Header/TabComponent';
+import React, { useEffect, useState } from "react";
+import TabComponent from "../Header/TabComponent";
+import "./SupplierStyle.css";
 
 const SupplierDashboard = () => {
-    const [shop, setShop] = useState('');
-    const [item, setItem] = useState('');
+  const [shop, setShop] = useState("");
+  const [item, setItem] = useState("");
 
-    useEffect(() => {
-        const storedShop = localStorage.getItem("S-Shop");
-        const storedItem = localStorage.getItem("S-Item");
-        setShop(storedShop);
-        setItem(storedItem);
-    }, []);
+  useEffect(() => {
+    const storedShop = localStorage.getItem("S-Shop");
+    const storedItem = localStorage.getItem("S-Item");
+    setShop(storedShop);
+    setItem(storedItem);
+  }, []);
 
-    return (
-        <div>
-            <TabComponent/>
-            <h1>Customer Dashboard</h1>
-
-            <h2>Select Shop is: {shop}</h2>
-            <h2>Select Item is: {item}</h2>
-        </div>
-    );
+  return (
+    <>
+      <TabComponent />
+      <div className="card">
+        <h2>Supplier Dashboard</h2>
+        <ul>
+          <li>Updated Shop : {shop}</li>
+          <li>Updated Item : {item}</li>
+        </ul>
+      </div>
+    </>
+  );
 };
 
 export default SupplierDashboard;
