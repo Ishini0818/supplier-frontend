@@ -1,0 +1,44 @@
+.card {
+    color: black;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 25px black !important;
+    margin-top: 10%;
+    margin-left: 35%;
+    background: silver !important;
+}
+#supplier{
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+h2{
+    margin-top: 10%;
+    margin-left: 15%;
+}
+select {
+    background-color: rgb(176, 167, 167);
+    font-size: larger;
+    font-style: bold;
+    font-size: medium;
+    border: 5%;
+}
+
+button {
+    margin-top: 50%;
+    background-color: #0482d1;
+    color: white;
+    font-size: larger;
+    padding: 5%;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: darkgray;
+    color: black;
+    font-size: x-large;
+    padding: 5.5%;
+    box-shadow: 0 0 15px black;
+}
+
